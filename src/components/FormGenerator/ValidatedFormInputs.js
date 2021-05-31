@@ -378,16 +378,20 @@ class ValidatedFormInputs extends Component {
         })}
         {!readOnly && (
           <div style={{ height: "50px" }} className="mt-5">
+            {/**btn btn-primary float-right mr-3 */}
             <button
-              className="btn btn-primary float-right mr-3"
+              className="btn btn-success mx-2"
               style={{
                 cursor: `${pristine ? "not-allowed" : "pointer"}`
               }}
               type="submit"
               disabled={pristine}
             >
-              Submit
+              Accept Request
+                    <i className="fa fa-check text-white mx-1"></i>
             </button>
+            
+
           </div>
         )}
       </form>
