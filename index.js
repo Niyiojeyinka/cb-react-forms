@@ -25,7 +25,9 @@ const FormGenerator = ({
 	formData, 
 	responseData, 
 	readOnly, 
-	onSubmit 
+	onSubmit ,
+	topView,
+	bottomView
 }) => (
 	<Provider store={store}>
 		<Generator 
@@ -33,6 +35,8 @@ const FormGenerator = ({
 			responseData={responseData} 
 			readOnly={readOnly} 
 			onSubmit={onSubmit} 
+			topView={topView}
+			bottomView={bottomView}
 		/>
 	</Provider>
 )

@@ -6,7 +6,9 @@ const Generator = ({
   onSubmit,
   readOnly,
   formData,
-  responseData
+  responseData,
+  topView,
+  bottomView
 }) => {
   return (
 		<div className="demo-form">
@@ -18,12 +20,14 @@ const Generator = ({
 					border: "1px solid #ccc"
 				}}
 			>
+				{topView}
 				<ValidatedFormInputs
 					formData={formData}
 					responseData={responseData}
 					onSubmit={onSubmit}
 					readOnly={readOnly}
 				/>
+				{bottomView}
 			</div>
 		</div>
   );
