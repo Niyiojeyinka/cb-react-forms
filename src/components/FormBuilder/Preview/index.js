@@ -41,7 +41,9 @@ class Preview extends Component {
       showEditor,
       previewItems,
       connectDropTarget,
-      submitBtnText
+      submitBtnText,
+      builderTitle,
+      topView
     } = this.props;
 
     const border = hovered ? "1px solid green" : "1px solid #ccc";
@@ -56,7 +58,7 @@ class Preview extends Component {
         )}
         <div style={{ height: "100%" }}>
           <div style={{ height: "50px" }}>
-            <h3 className="float-left">Form Builder</h3>
+            <h3 className="float-left">{builderTitle?builderTitle:""}</h3>
             <button
               className="btn btn-primary float-right ml-3"
               onClick={() =>
@@ -74,6 +76,7 @@ class Preview extends Component {
               {submitBtnText?submitBtnText:"Submit"}
             </button>
           </div>
+          {topView}
           <div
             className="jumbotron bg-default"
             style={{ border, minHeight: "80vh" }}

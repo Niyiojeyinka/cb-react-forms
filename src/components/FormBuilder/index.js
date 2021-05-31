@@ -13,7 +13,9 @@ const Builder = ({
   editorVisible,
   onSubmit,
   items,
-  submitBtnText
+  submitBtnText,
+  builderTitle,
+  topView
 }) => {
   return (
     <React.Fragment>
@@ -27,6 +29,8 @@ const Builder = ({
             <Preview 
               onSubmit={onSubmit} 
               submitBtnText={submitBtnText}
+              builderTitle={builderTitle}
+              topView={topView}
             />
           </div>
           <div className="col-md-4">
