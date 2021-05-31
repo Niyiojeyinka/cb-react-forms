@@ -40,7 +40,8 @@ class Preview extends Component {
       removeItem,
       showEditor,
       previewItems,
-      connectDropTarget
+      connectDropTarget,
+      submitBtnText
     } = this.props;
 
     const border = hovered ? "1px solid green" : "1px solid #ccc";
@@ -70,7 +71,7 @@ class Preview extends Component {
               onClick={() => onSubmit(JSON.stringify(previewItems))}
               disabled={isEmpty(previewItems)}
             >
-              {props.submitBtnText?props.submitBtnText:"Submit"}
+              {submitBtnText?submitBtnText:"Submit"}
             </button>
           </div>
           <div
