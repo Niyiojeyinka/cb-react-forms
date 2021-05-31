@@ -76,8 +76,8 @@ class ValidatedFormInputs extends Component {
 
             // text label
             labelText =
-              formInput.label.blocks &&
-              formInput.label.blocks[0].text;
+              formInput?.label?.blocks &&
+              formInput?.label?.blocks[0].text;
           }
 
           return (
