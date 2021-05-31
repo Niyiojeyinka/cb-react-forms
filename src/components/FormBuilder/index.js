@@ -12,7 +12,8 @@ import defaultItems from "./Toolbar/defaultItems";
 const Builder = ({
   editorVisible,
   onSubmit,
-  items
+  items,
+  submitBtnText
 }) => {
   return (
     <React.Fragment>
@@ -25,6 +26,7 @@ const Builder = ({
           <div className="col-md-8">
             <Preview 
               onSubmit={onSubmit} 
+              submitBtnText={submitBtnText}
             />
           </div>
           <div className="col-md-4">
