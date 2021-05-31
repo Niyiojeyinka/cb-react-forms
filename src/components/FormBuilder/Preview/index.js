@@ -70,7 +70,7 @@ class Preview extends Component {
               onClick={() => onSubmit(JSON.stringify(previewItems))}
               disabled={isEmpty(previewItems)}
             >
-              {submitBtnText?submitBtnText:"Submit"}
+              {props.submitBtnText?props.submitBtnText:"Submit"}
             </button>
           </div>
           <div
