@@ -75,9 +75,9 @@ class ValidatedFormInputs extends Component {
             label = convertDraftjsToHtml(formInput.label);
 
             // text label
-            labelText ="test";/*
-              formInput?.label?.blocks &&
-              formInput?.label?.blocks[0].text;*/
+            labelText =
+              formInput.label.blocks &&
+              formInput.label.blocks[0].text;
           }
 
           return (
