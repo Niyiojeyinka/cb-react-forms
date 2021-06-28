@@ -8,7 +8,8 @@ const Generator = ({
   formData,
   responseData,
   topView,
-  bottomView
+  bottomView,
+  showAcceptBtn
 }) => {
   return (
 		<div className="demo-form">
@@ -26,6 +27,8 @@ const Generator = ({
 					responseData={responseData}
 					onSubmit={onSubmit}
 					readOnly={readOnly}
+					showAcceptBtn={showAcceptBtn}
+
 				/>
 				{bottomView}
 			</div>

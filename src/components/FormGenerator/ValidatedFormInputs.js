@@ -57,7 +57,8 @@ class ValidatedFormInputs extends Component {
       readOnly,
       pristine,
       responseData,
-      handleSubmit
+      handleSubmit,
+      showAcceptBtn
     } = this.props;
 
     const urlValidator = formInput =>
@@ -376,7 +377,7 @@ class ValidatedFormInputs extends Component {
             </div>
           );
         })}
-        {!readOnly && (
+        {!readOnly && showAcceptBtn && (
           <div style={{ height: "50px" }} className="mt-5">
             {/**btn btn-primary float-right mr-3 */}
             <button
