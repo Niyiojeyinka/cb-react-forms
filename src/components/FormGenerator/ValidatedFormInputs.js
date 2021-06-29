@@ -62,7 +62,8 @@ class ValidatedFormInputs extends Component {
     } = this.props;
 
 
-    const acceptBtnJSX = showAcceptBtn? <div style={{ height: "50px" }} className="mt-5">
+    const acceptBtnJSX = showAcceptBtn===true? 
+    (<div style={{ height: "50px" }} className="mt-5">
     {/**btn btn-primary float-right mr-3 */}
     <button
       className="btn btn-success mx-2"
@@ -77,7 +78,7 @@ class ValidatedFormInputs extends Component {
     </button>
     
 
-  </div>:<></>;
+  </div>):<></>;
     const urlValidator = formInput =>
       formInput.required ? [isRequired, validateUrl] : [validateUrl];
 
